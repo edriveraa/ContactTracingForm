@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ContactTracingForm
 {
@@ -16,10 +17,21 @@ namespace ContactTracingForm
         {
             InitializeComponent();
         }
-
-        private void NameBox_TextChanged(object sender, EventArgs e)
+        private void btsub_Click(object sender, EventArgs e)
         {
-
+            submit(tbname.Text, (tbadd.Text), int.Parse(tbtemp.Text), int.Parse(tbage.Text));
         }
+        private void submit(String name, string address, int temp, int age)
+        {
+            StreamWriter sw = File.AppendText("data.txt");
+            sw.WriteLine(name);
+            sw.WriteLine(address);
+            sw.WriteLine(temp.ToString());
+            sw.WriteLine(age.ToString());
+            sw.Close();
+            MessageBox.Show("Information successfully submitted.");
+        }
+
     }
 }
+

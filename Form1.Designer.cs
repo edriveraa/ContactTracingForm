@@ -29,106 +29,110 @@ namespace ContactTracingForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.NameBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.RegionBox1 = new System.Windows.Forms.ComboBox();
-            this.ProvinceBox1 = new System.Windows.Forms.ComboBox();
+            this.tbname = new System.Windows.Forms.TextBox();
+            this.lbname = new System.Windows.Forms.Label();
+            this.lbaddress = new System.Windows.Forms.Label();
+            this.tbadd = new System.Windows.Forms.TextBox();
+            this.lbtemp = new System.Windows.Forms.Label();
+            this.tbtemp = new System.Windows.Forms.TextBox();
+            this.lbage = new System.Windows.Forms.Label();
+            this.tbage = new System.Windows.Forms.TextBox();
+            this.btsub = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // NameBox
+            // tbname
             // 
-            this.NameBox.Location = new System.Drawing.Point(12, 38);
-            this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(258, 20);
-            this.NameBox.TabIndex = 0;
-            this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
+            this.tbname.Location = new System.Drawing.Point(12, 38);
+            this.tbname.Name = "tbname";
+            this.tbname.Size = new System.Drawing.Size(258, 20);
+            this.tbname.TabIndex = 0;
             // 
-            // label1
+            // lbname
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Name (First, Middle I., Last)";
+            this.lbname.AutoSize = true;
+            this.lbname.Location = new System.Drawing.Point(9, 22);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(135, 13);
+            this.lbname.TabIndex = 1;
+            this.lbname.Text = "Name (First, Middle I., Last)";
             // 
-            // label2
+            // lbaddress
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Address";
+            this.lbaddress.AutoSize = true;
+            this.lbaddress.Location = new System.Drawing.Point(9, 61);
+            this.lbaddress.Name = "lbaddress";
+            this.lbaddress.Size = new System.Drawing.Size(189, 13);
+            this.lbaddress.TabIndex = 2;
+            this.lbaddress.Text = "Address, In Words (Barangay and City)";
             // 
-            // RegionBox1
+            // tbadd
             // 
-            this.RegionBox1.FormattingEnabled = true;
-            this.RegionBox1.Items.AddRange(new object[] {
-            "NCR",
-            "CAR",
-            "Region 1",
-            "Region 2",
-            "Region 3",
-            "Region 4A",
-            "Region 4B",
-            "Region 5",
-            "Region 6",
-            "Region 7",
-            "Region 8",
-            "Region 9",
-            "Region 10",
-            "Region 11",
-            "Region 12",
-            "Region 13",
-            "BARMM"});
-            this.RegionBox1.Location = new System.Drawing.Point(12, 77);
-            this.RegionBox1.Name = "RegionBox1";
-            this.RegionBox1.Size = new System.Drawing.Size(82, 21);
-            this.RegionBox1.TabIndex = 3;
-            this.RegionBox1.Text = "Region";
+            this.tbadd.Location = new System.Drawing.Point(12, 77);
+            this.tbadd.Name = "tbadd";
+            this.tbadd.Size = new System.Drawing.Size(258, 20);
+            this.tbadd.TabIndex = 3;
             // 
-            // ProvinceBox1
+            // lbtemp
             // 
-            this.ProvinceBox1.DisplayMember = "RegionBox1";
-            this.ProvinceBox1.FormattingEnabled = true;
-            this.ProvinceBox1.Items.AddRange(new object[] {
-            "NCR",
-            "CAR",
-            "Region 1",
-            "Region 2",
-            "Region 3",
-            "Region 4A",
-            "Region 4B",
-            "Region 5",
-            "Region 6",
-            "Region 7",
-            "Region 8",
-            "Region 9",
-            "Region 10",
-            "Region 11",
-            "Region 12",
-            "Region 13",
-            "BARMM"});
-            this.ProvinceBox1.Location = new System.Drawing.Point(100, 77);
-            this.ProvinceBox1.Name = "ProvinceBox1";
-            this.ProvinceBox1.Size = new System.Drawing.Size(82, 21);
-            this.ProvinceBox1.TabIndex = 4;
-            this.ProvinceBox1.Text = "Province";
+            this.lbtemp.AutoSize = true;
+            this.lbtemp.Location = new System.Drawing.Point(9, 100);
+            this.lbtemp.Name = "lbtemp";
+            this.lbtemp.Size = new System.Drawing.Size(67, 13);
+            this.lbtemp.TabIndex = 4;
+            this.lbtemp.Text = "Temperature";
+            // 
+            // tbtemp
+            // 
+            this.tbtemp.Location = new System.Drawing.Point(12, 116);
+            this.tbtemp.Name = "tbtemp";
+            this.tbtemp.Size = new System.Drawing.Size(67, 20);
+            this.tbtemp.TabIndex = 5;
+            // 
+            // lbage
+            // 
+            this.lbage.AutoSize = true;
+            this.lbage.Location = new System.Drawing.Point(85, 100);
+            this.lbage.Name = "lbage";
+            this.lbage.Size = new System.Drawing.Size(26, 13);
+            this.lbage.TabIndex = 6;
+            this.lbage.Text = "Age";
+            // 
+            // tbage
+            // 
+            this.tbage.Location = new System.Drawing.Point(88, 116);
+            this.tbage.Name = "tbage";
+            this.tbage.Size = new System.Drawing.Size(67, 20);
+            this.tbage.TabIndex = 7;
+            // 
+            // btsub
+            // 
+            this.btsub.Location = new System.Drawing.Point(195, 113);
+            this.btsub.Name = "btsub";
+            this.btsub.Size = new System.Drawing.Size(75, 23);
+            this.btsub.TabIndex = 8;
+            this.btsub.Text = "&Submit";
+            this.btsub.UseVisualStyleBackColor = true;
+            this.btsub.Click += new System.EventHandler(this.btsub_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 304);
-            this.Controls.Add(this.ProvinceBox1);
-            this.Controls.Add(this.RegionBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.NameBox);
+            this.BackColor = System.Drawing.SystemColors.GrayText;
+            this.ClientSize = new System.Drawing.Size(317, 195);
+            this.Controls.Add(this.btsub);
+            this.Controls.Add(this.tbage);
+            this.Controls.Add(this.lbage);
+            this.Controls.Add(this.tbtemp);
+            this.Controls.Add(this.lbtemp);
+            this.Controls.Add(this.tbadd);
+            this.Controls.Add(this.lbaddress);
+            this.Controls.Add(this.lbname);
+            this.Controls.Add(this.tbname);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Text = "Contact Tracing Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,11 +140,15 @@ namespace ContactTracingForm
 
         #endregion
 
-        private System.Windows.Forms.TextBox NameBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox RegionBox1;
-        private System.Windows.Forms.ComboBox ProvinceBox1;
+        private System.Windows.Forms.TextBox tbname;
+        private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Label lbaddress;
+        private System.Windows.Forms.TextBox tbadd;
+        private System.Windows.Forms.Label lbtemp;
+        private System.Windows.Forms.TextBox tbtemp;
+        private System.Windows.Forms.Label lbage;
+        private System.Windows.Forms.TextBox tbage;
+        private System.Windows.Forms.Button btsub;
     }
 }
 
