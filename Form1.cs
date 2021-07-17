@@ -20,6 +20,8 @@ namespace ContactTracingForm
         private void btsub_Click(object sender, EventArgs e)
         {
             submit(tbname.Text, (tbadd.Text), int.Parse(tbtemp.Text), int.Parse(tbage.Text));
+            MessageBox.Show("Information successfully submitted.", "Information Recorded Successfully");
+            this.Close();
         }
         private void submit(String name, string address, int temp, int age)
         {
@@ -29,7 +31,6 @@ namespace ContactTracingForm
             sw.WriteLine(temp.ToString());
             sw.WriteLine(age.ToString());
             sw.Close();
-            MessageBox.Show("Information successfully submitted.");
         }
 
     }
